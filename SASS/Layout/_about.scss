@@ -1,0 +1,45 @@
+.about {
+    padding: 100px 0;
+    .about_content {
+        width: 80%;
+        margin: auto;
+
+        h1 {
+            @include styleText($color-Black-0, $fs-1, $fw-3, $ls-0);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        p {
+            @include styleText($color-Black-0, $fs-5, $fw-0, $ls-0);
+        }
+        .row {
+            .about_left {
+                img {
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 50%;
+                    margin-bottom: $pd-0;
+                }
+            }
+            .about_right {
+                margin-top: $mg-1;
+                .about_profile {
+                    margin: 0;
+                    padding: 0;
+                    li {
+                        // text-decoration: none;
+                        list-style: none;
+                        @include styleText($color-Black-0, $fs-4 - 3, $fw-3, $ls-0);
+                        margin: $mg-0 - 3 0;
+                        span {
+                            font-weight: $fw-0;
+                        }
+                    }
+                    p {
+                        font-size: $fs-5 - 3;
+                    }
+                }
+            }
+        }
+    }
+}

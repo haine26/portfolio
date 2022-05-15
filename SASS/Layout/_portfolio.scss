@@ -1,0 +1,91 @@
+.portfolio {
+    padding: 100px 0;
+    background-image: url(../img/cool-background.png);
+    background-size: cover;
+    h1 {
+        text-align: center;
+        @include styleText($color-Black-0, $fs-1, $fw-3, $ls-0);
+        margin-bottom: $mg-1 + 5;
+    }
+    .portfolio_content {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        .portfolio_item {
+            margin-bottom: $mg-1;
+            .portfolio_details {
+                position: relative;
+                overflow: hidden;
+                &:hover {
+                    .portfolio_wrap {
+                        opacity: 1;
+                        transform: translateX(0);
+                    }
+                }
+                img {
+                    display: block;
+                    width: 100%;
+                    transition: 0.5s;
+                }
+                .portfolio_wrap {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    background-color: rgba(0, 0, 0, 0.6);
+                    color: $color-white-0;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    padding: 60px 50px;
+                    opacity: 0;
+                    transition: all 0.5s;
+                    transform: translateX(-100%);
+                    button {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        padding: $pd-1;
+                        width: 100%;
+                        height: 70px;
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+    }
+    .modal {
+        .modal-dialog {
+            .modal-header {
+                background-color: $color-green-2;
+                .modal-title {
+                    @include styleText($color-Black-0, $fs-0, $fw-2, $ls-0);
+                }
+            }
+            .modal-body {
+                text-align: center;
+                img {
+                    width: 400px;
+                }
+                p {
+                    width: 85%;
+                    margin: auto;
+                    // text-align: left;
+                    @include styleText($color-Black-0, $fs-5, $fw-0, $ls-0);
+                    padding: 20px 0;
+                }
+            }
+        }
+    }
+}
+
+@include responsive("small") {
+    .portfolio {
+        .portfolio_content {
+            .row {
+                .portfolio_a {
+                    left: 107px;
+                }
+            }
+        }
+    }
+}

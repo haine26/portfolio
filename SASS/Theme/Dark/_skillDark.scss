@@ -1,0 +1,16 @@
+.darkMode{
+    .skills {
+        .skills_content{
+            h1{
+                color: $color-white-0;
+            }
+            .skills_details{
+                color: $color-white-0;
+                p{
+                    color: $color-white-0;
+                    border-color: $dark-green-1;
+                }
+            }
+        }
+    }
+}

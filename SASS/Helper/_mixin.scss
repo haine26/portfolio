@@ -1,0 +1,49 @@
+@mixin styleText($color, $fs, $fw, $ls) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+    letter-spacing: $ls;
+}
+
+@mixin link-color($color, $bg-color, $text-decoration) {
+    &:hover,
+    &:focus {
+        color: $color;
+        background-color: $bg-color;
+        text-decoration: $text-decoration;
+    }
+}
+
+@mixin styleButton($color, $bg-color, $ls, $border, $fs, $fw, $pd-y, $pd-x, $borderRadius) {
+    color: $color;
+    background-color: $bg-color;
+    letter-spacing: $ls;
+    border: 1px solid $border;
+    font-size: $fs;
+    font-weight: $fw;
+    padding: $pd-y $pd-x;
+    cursor: pointer;
+    border-radius: $borderRadius;
+}
+@mixin hoverButton($color-hover, $bg-color, $border) {
+    color: $color-hover;
+    background-color: $bg-color;
+    border: 1px solid $border;
+}
+@mixin focusButton() {
+    outline: none;
+}
+
+@mixin responsive($screen) {
+    @if map-has-key($map: $breakpoints, $key: $screen) {
+        $value: map-get(
+            $map: $breakpoints,
+            $key: $screen,
+        );
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    } @else {
+        @warn "`{$screen}` isn't valid breakpoints";
+    }
+}

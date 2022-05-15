@@ -1,0 +1,93 @@
+.contact {
+    padding: 100px 0;
+    .contact_content {
+        width: 80%;
+        margin: auto;
+        h1 {
+            @include styleText($color-Black-0, $fs-1, $fw-3, $ls-0);
+            text-align: center;
+            margin-bottom: $mg-1 + 5;
+        }
+        .contact_item {
+            .contact_details {
+                .contact_left {
+                    .contact_map {
+                        padding: $pd-2 0;
+                    }
+
+                    .contact_info {
+                        ul {
+                            padding: 0;
+                            li {
+                                padding: $pd-0;
+                                list-style: none;
+                                margin: 15px 0;
+                                border: 1px solid $color-green-1;
+                                border-radius: 30px;
+
+                                a {
+                                    display: block;
+                                    text-decoration: none;
+                                    padding: $pd-1;
+                                    @include styleText($color-Black-0, $fs-4, $fw-0, $ls-0);
+                                    span {
+                                        background-color: $color-white-0;
+                                        border-radius: 30px;
+                                        padding: 3px 10px;
+                                        text-align: center;
+                                        transition: 0.3s;
+                                        @include link-color($color-green-1, $color-green-2, none);
+                                    }
+
+                                    i {
+                                        width: 50px;
+                                        height: 50px;
+                                        border-radius: 50%;
+                                        background-color: $color-white-0;
+                                        text-align: center;
+                                        line-height: 50px;
+                                        color: $color-Black-0;
+                                        margin-right: $pd-1;
+                                        transition: 0.3s;
+                                        @include link-color($color-green-1, $color-green-2, none);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .contact_right {
+                    input {
+                        @include styleText($color-Black-0, $fs-5, $fw-0, $ls-0);
+                        padding: $pd-0 $pd-2;
+                        margin: $mg-0 - 5;
+                        outline: none;
+                        width: 100%;
+                        border-radius: 15px;
+                        &:focus {
+                            box-shadow: 4px 4px 4px 0 $color-green-2;
+                            border-radius: 30px;
+                        }
+                    }
+                    button{
+                        width: 100%;
+                        border-radius: 15px;
+                        margin: $mg-0 - 5;
+                    }
+                    textarea {
+                        @include styleText($color-Black-0, $fs-5, $fw-0, $ls-0);
+                        padding: $pd-0 $pd-2;
+                        margin: $mg-0 - 5;
+                        outline: none;
+                        width: 100%;
+                        border-radius: 15px;
+                        &:focus {
+                            box-shadow: 4px 4px 4px 0 $color-green-2;
+                            border-radius: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,166 @@
+body {
+    font-family: "Baloo Bhaijaan 2", cursive;
+}
+.carousel {
+    background-color: $color-green-2;
+    .carousel_content {
+        padding-top: 150px;
+        width: 80%;
+        margin: auto;
+        .carousel_left {
+            .hieu_ung_chu {
+                p {
+                    display: inline-block;
+                    border: 2px solid $color-green-1;
+                    background-color: $color-white-0;
+                    padding: $pd-1 $pd-2;
+                    text-align: center;
+                    border-radius: 30px 30px 30px 0;
+                    @include styleText($color-green-1, $fs-3, $fw-1, $ls-0);
+                    margin-bottom: $mg-1;
+                    animation-delay: 0.5s;
+                }
+                h1 {
+                    @include styleText($color-white-0, $fs-1, $fw-3, $ls-0);
+                }
+                h2 {
+                    min-height: 50px;
+                    @include styleText($color-yellow-0, $fs-0, $fw-1, $ls-0);
+                }
+            }
+            .carousel_contact {
+                ul {
+                    padding: 0;
+
+                    li {
+                        list-style: none;
+                        margin: 15px 0;
+                        a {
+                            text-decoration: none;
+                            @include styleText($color-white-0, $fs-4, $fw-0, $ls-0);
+                            span {
+                                background-color: transparent;
+                                border-radius: 30px;
+                                padding: 3px 10px;
+                                text-align: center;
+                                transition: 0.3s;
+                                @include link-color($color-white-0, $color-yellow-0, none);
+                            }
+                            i {
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 50%;
+                                background-color: transparent;
+                                text-align: center;
+                                line-height: 50px;
+                                color: $color-white-0;
+                                margin-right: $pd-1;
+                                transition: 0.3s;
+                                @include link-color($color-white-0, $color-yellow-0, none);
+                            }
+                        }
+                    }
+                }
+                .carousel_social {
+                    margin: 0;
+                    padding: 0;
+                    animation-delay: 0.5s;
+                    span {
+                        i {
+                            width: 45px;
+                            height: 45px;
+                            border-radius: 50%;
+                            line-height: 45px;
+                            @include styleText($color-white-0, $fs-4, $fw-0, $ls-0);
+                            margin: $mg-1;
+                            text-align: center;
+                            transition: 0.5s;
+                            @include link-color($color-white-0, $color-yellow-0, none);
+                        }
+                    }
+                }
+            }
+        }
+        .carousel_right {
+            img {
+                width: 80%;
+            }
+        }
+    }
+}
+
+// Responsive
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .carousel {
+        .carousel_content {
+            .carousel_left {
+                .hieu_ung_chu {
+                    p {
+                        font-size: $fs-4;
+                    }
+                    h1 {
+                        font-size: $fs-0 + 5;
+                    }
+                    h2 {
+                        font-size: $fs-3;
+                    }
+                }
+                .carousel_contact {
+                    ul {
+                        li {
+                            a {
+                                font-size: $fs-5;
+                            }
+                        }
+                    }
+
+                    .carousel_social {
+                        span {
+                            i {
+                                font-size: $fs-5;
+                            }
+                        }
+                    }
+                }
+            }
+            .carousel_right {
+                img {
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+@include responsive("large") {
+    .carousel {
+        .carousel_content {
+            .carousel_right {
+                img {
+                    width: 100% ;       
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .carousel {
+        .carousel_content {
+            .carousel_left {
+                .hieu_ung_chu {
+                    p {
+                        font-size: 15px;
+                    }
+                    h1 {
+                        font-size: $fs-2 - 5;
+                    }
+                    h2 {
+                        font-size: $fs-3 - 3;
+                    }
+                }
+            }
+        }
+    }
+}

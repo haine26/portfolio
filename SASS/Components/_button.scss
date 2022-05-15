@@ -1,0 +1,59 @@
+.button--green {
+    outline: none;
+    @include styleButton(
+        $color-green-3,
+        $color-white-0,
+        $ls-0 + 1,
+        $color-green-3,
+        $fs-5,
+        $fw-2,
+        $pd-0 - 1,
+        ($pd-0) + 2,
+        30px
+    );
+    &:hover {
+        @include hoverButton($color-green-3, $color-green-2, $color-green-0);
+    }
+    &:focus{
+        @include focusButton;
+    }
+}
+
+.button--green__square {
+    @include styleButton(
+        $color-green-1,
+        $color-yellow-0,
+        $ls-0 + 1,
+        $color-green-0,
+        $fs-5,
+        $fw-2,
+        $pd-0 - 1,
+        ($pd-0) + 2,
+        0
+    );
+    &:hover {
+        @include hoverButton($color-white-0, $color-green-3, $color-green-3);
+    }
+    &:focus{
+        @include focusButton;
+    }
+}
+.button_close{
+    @include styleButton(
+        $color-Black-0,
+        transition,
+        $ls-0 + 1,
+        $color-green-0,
+        $fs-5,
+        $fw-2,
+        $pd-0 - 1,
+        ($pd-0) + 2,
+        70%
+    );
+    &:hover {
+        @include hoverButton($color-green-3, $color-green-2, $color-green-0);
+    }
+    &:focus{
+        @include focusButton;
+    }
+}

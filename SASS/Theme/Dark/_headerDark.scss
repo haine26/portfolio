@@ -1,0 +1,27 @@
+.darkMode {
+    background-color: $color-dark-0;
+    header {
+        .header_content {
+            background-color: $color-dark-1;
+            .collapse {
+                #mainNav {
+                    li {
+                        &:hover {
+                            .nav-link {
+                                color: #FFBD59;
+                            }
+                        }
+                        .nav-link {
+                            color: $color-white-0;
+                        }
+                    }
+                    > li.active {
+                        .nav-link {
+                            color: #FFBD59;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

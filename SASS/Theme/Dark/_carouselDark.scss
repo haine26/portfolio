@@ -1,0 +1,46 @@
+.darkMode {
+    .carousel {
+        background-color: $color-dark-0;
+        .carousel_content {
+            .carousel_left {
+                .hieu_ung_chu {
+                    h1 {
+                        color: $color-white-0;
+                    }
+                    h2 {
+                        color: $color-white-0;
+                    }
+                }
+                .carousel_contact {
+                    ul {
+                        li {
+                            a {
+                                background-color: $color-dark-0;
+                                color: $color-white-0;
+                                
+                                span, i {
+                                    background-color: $color-dark-0;
+                                    color: $color-white-0;
+                                    &:hover{
+                                        background-color: $dark-green-1;                                       
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .carousel_social {
+                        span {
+                            i {
+                                color: $color-white-0;
+                                &:hover {
+                                    background-color: $dark-green-1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,101 @@
+* {
+    scroll-behavior: smooth;
+}
+header {
+    position: fixed;
+    z-index: 99;
+    .header_content {
+        background-color: rgba(255, 255, 255, 0.884);
+        .navbarNav {
+            .navbar-brand {
+                img {
+                    display: inline-block;
+                    width: 30%;
+                }
+            }
+            .navbar-toggler {
+                outline: none;
+            }
+            .collapse {
+                #mainNav {
+                    li {
+                        margin: $mg-0 - 10;
+                        padding: $pd-0;
+                        .nav-link {
+                            text-decoration: none;
+                            list-style: none;
+                            line-height: $lh-0;
+                            @include styleText($color-Black-0, $fs-3, $fw-2, $ls-0);
+                            @include link-color($color-green-1, transparent, none);
+                            transition: 0.5s;
+                        }
+                    }
+                    > li.active {
+                        .nav-link {
+                            color: $color-green-1;
+                            background-color: transparent;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 992px) {
+    header {
+        .header_content {
+            .navbarNav {
+                .collapse {
+                    #mainNav {
+                        // text-align: center;
+                        li {
+                            transition: 0.5s;
+                            &:hover {
+                                .nav-link {
+                                    background-color: $color-green-3;
+                                    color: $color-white-0;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                        > li.active {
+                            .nav-link {
+                                background-color: $color-green-3;
+                                color: $color-white-0;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    header {
+        .header_content {
+            .navbarNav {
+                .navbar-brand {
+                    img {
+                        width: 40%;
+                        display: inline-block;
+                    }
+                }
+                .collapse {
+                    #mainNav {
+                        li {
+                            padding: $pd-0 - 5;
+                            white-space: nowrap;
+                            text-align: center;
+                            .nav-link {
+                                font-size: $fs-4;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

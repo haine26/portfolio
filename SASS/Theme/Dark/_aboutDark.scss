@@ -1,0 +1,18 @@
+.darkMode{
+    .about{
+        .about_content {
+            h1, p{
+                color: $color-white-0;
+            }
+        }
+        .row{
+            .about_right{
+                .about_profile{
+                    li{
+                        color: $color-white-0;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.skills {
+    padding: 100px 0;
+    // background-color: $color-yellow-0;
+    .skills_content {
+        width: 80%;
+        margin: auto;
+        h1 {
+            text-align: center;
+            @include styleText($color-Black-0, $fs-1, $fw-3, $ls-0);
+            margin-bottom: $mg-1 + 5;
+        }
+
+        .skills_item {
+            .skills_details {
+                p {
+                    @include styleText($color-Black-0, $fs-5, $fw-0, $ls-0);
+                    display: inline-block;
+                    border: 2px solid $color-green-3;
+                    border-radius: 35px;
+                    margin: $mg-0 - 5;
+                    padding: 5px 20px;
+                }
+            }
+            .skills_img {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+// @include responsive("large") {
+//     .skills {
+//         .skills_content {
+//             .skills_item {
+//                 .skills_img {
+//                     img {
+//                         display: none;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

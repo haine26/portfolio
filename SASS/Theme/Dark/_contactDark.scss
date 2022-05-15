@@ -1,0 +1,47 @@
+.darkMode {
+    .contact {
+        .contact_content {
+            h1 {
+                color: $color-white-0;
+            }
+            .contact_item {
+                .contact_details {
+                    .contact_left {
+                        .contact_info {
+                            ul {
+                                li {
+                                    border-color: $dark-green-0;
+                                    a {
+                                        background-color: $color-dark-0;
+                                        color: $color-white-0;
+                                        span,
+                                        i {
+                                            background-color: $color-dark-0;
+                                            color: $color-white-0;
+                                            &:hover {
+                                                background-color: $dark-green-1;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .contact_right {
+                        input,
+                        textarea {
+                            background-color: $color-dark-0;
+                            color: $color-white-0;
+                            &::placeholder {
+                                color: $color-white-0;
+                            }
+                            &:focus {
+                                box-shadow: 4px 4px 4px 0 $dark-green-1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
