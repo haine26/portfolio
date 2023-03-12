@@ -353,7 +353,7 @@ body {
 }
 
 .about {
-  background-image: url(img/wave-haikei.svg);
+  background-image: url(../img/wave-haikei.svg);
   background-size: cover;
   padding: 100px 0;
 }
@@ -443,7 +443,7 @@ body {
 
 .portfolio {
   padding: 100px 0;
-  background-image: url(img/low-poly-grid-haikei.svg);
+  background-image: url(../img/low-poly-grid-haikei.svg);
   background-size: cover;
 }
 
