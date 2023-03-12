@@ -26,7 +26,7 @@
                 }
                 .about_status {
                     p {
-                        text-indent: 25px;
+                        // text-indent: 25px;
                         width: 95%;
                         margin: auto;
                         @include styleText($color-Black-0, $fs-5, $fw-0, $ls-0);
@@ -39,7 +39,6 @@
                         span{
                             color: $color-green-1;
                             font-weight: 600;
-                            padding: $pd-2;
                         }
                     }
                 }
@@ -47,5 +46,3 @@
         }
     }
 }
-
-//RESPONSIVE

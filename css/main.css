@@ -336,20 +336,19 @@ body {
 }
 
 @media screen and (max-width: 576px) {
-  .carousel .carousel_content .carousel_left {
-    margin-left: 25px;
-  }
   .carousel .carousel_content .carousel_left .carousel_text p {
     font-size: 20px;
   }
   .carousel .carousel_content .carousel_left .carousel_text h1 {
-    font-size: 45px;
+    font-size: 35px;
   }
   .carousel .carousel_content .carousel_left .carousel_text .typing-out {
-    font-size: 25px;
+    font-size: 15px;
   }
   .carousel .carousel_content .carousel_right img {
-    max-width: 100%;
+    margin: auto;
+    padding-top: 20px;
+    max-width: 95%;
   }
 }
 
@@ -391,7 +390,6 @@ body {
 }
 
 .about .about_content .about_items .about_detail .about_status p {
-  text-indent: 25px;
   width: 95%;
   margin: auto;
   color: #000;
@@ -411,7 +409,6 @@ body {
 .about .about_content .about_items .about_detail .about_status .about_status-detail span {
   color: #7a9b57;
   font-weight: 600;
-  padding: 20px;
 }
 
 .skills {
@@ -660,7 +657,7 @@ body {
 .wrap button {
   text-align: start;
   position: absolute;
-  bottom: 40px;
+  bottom: 60px;
   left: 0px;
   padding: 5px;
   width: 100%;
