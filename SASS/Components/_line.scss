@@ -1,0 +1,14 @@
+.line {
+    ::after {
+        content: "";
+        width: 0;
+        height: 3px;
+        background: linear-gradient(to right, $color-green-2, $color-green-3);
+        display: block;
+        box-shadow: 0 0 20px 0 $color-green-3;
+        transition: 0.5s;
+    }
+    :hover::after {
+        width: 100%;
+    }
+}

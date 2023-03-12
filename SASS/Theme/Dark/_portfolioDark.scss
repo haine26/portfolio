@@ -1,0 +1,23 @@
+.darkMode {
+    .portfolio {
+        background-image: url(../../img/low-poly-grid-haikei-dark.svg);
+        background-size: cover;
+        h1 {
+            color: $color-white-0;
+        }
+
+        .modal {
+            .modal-dialog {
+                .modal-header {
+                    background-color: $color-dark-1;
+                    .modal-title {
+                        color: $color-white-0;
+                    }
+                    .close {
+                        color: $color-white-0;
+                    }
+                }
+            }
+        }
+    }
+}

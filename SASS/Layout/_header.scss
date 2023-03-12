@@ -1,0 +1,161 @@
+* {
+    scroll-behavior: smooth;
+}
+
+header {
+    .navbar {
+        // justify-content: space-between;
+        position: fixed;
+        z-index: 99;
+        background-color: $color-white-1;
+        width: 100%;
+        .navbar-brand {
+            .header_logo {
+                img {
+                    display: inline-block;
+                    width: 30%;
+                }
+                span {
+                    margin-left: $mg-0;
+                    @include styleText($color-green-1, $fs-3, $fw-3, $ls-0 + 3);
+                }
+            }
+        }
+        .navbar-toggler {
+            outline: none;
+        }
+        .collapse {
+            #mainNav {
+                li {
+                    margin: 0 $mg-0;
+                    padding: $pd-1;
+                    .nav-link {
+                        text-decoration: none;
+                        list-style: none;
+                        line-height: $lh-0;
+                        @include styleText($color-Black-0, $fs-4, $fw-2, $ls-0);
+                        @include link-color($color-green-1, transparent, none);
+                        transition: 0.5s;
+                    }
+                }
+
+                > li.active {
+                    .nav-link {
+                        color: $color-green-1;
+                        background-color: transparent;
+                        text-decoration: none;
+                    }
+                    ::after{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        .header_content {
+            .navbar {
+                .navbar-brand {
+                    .header_logo {
+                        img {
+                            width: 20%;
+                            display: inline-block;
+                        }
+                        span {
+                            font-size: $fs-5;
+                        }
+                    }
+                }
+                .collapse {
+                    #mainNav {
+                        text-align: center;
+                        li {
+                            transition: 0.5s;
+                            &:hover {
+                                .nav-link {
+                                    background-color: $color-green-3;
+                                    color: $color-white-0;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                        > li.active {
+                            .nav-link {
+                                background-color: $color-green-3;
+                                color: $color-white-0;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+    header {
+        .header_content {
+            .navbar {
+                .navbar-brand {
+                    .header_logo {
+                        img {
+                            width: 30%;
+                            display: inline-block;
+                        }
+                        span {
+                            font-size: $fs-5;
+                        }
+                    }
+                }
+                .collapse {
+                    #mainNav {
+                        li {
+                            padding: $pd-1;
+                            margin: $mg-3;
+                            font-size: 15px;
+                            white-space: nowrap;
+                            text-align: center;
+                            .nav-link {
+                                font-size: $fs-5;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 992px) {
+    header {
+        .header_content {
+            .navbar {
+                .navbar-brand {
+                    .header_logo {
+                        img {
+                            width: 40%;
+                            display: inline-block;
+                        }
+                        span {
+                            font-size: $fs-0;
+                        }
+                    }
+                }
+                .collapse {
+                    #mainNav {
+                        li {
+                            padding: $pd-0 - 5;
+                            white-space: nowrap;
+                            text-align: center;
+                            .nav-link {
+                                font-size: $fs-4;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

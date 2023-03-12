@@ -1,0 +1,45 @@
+.darkMode {
+    .carousel {
+        background-color: $dark-green-2;
+        .carousel_content {
+            .carousel_left {
+                .carousel_text {
+                    h1 {
+                        color: $color-white-0;
+                    }
+                    h2 {
+                        color: $color-yellow-0;
+                    }
+                }
+                .carousel_contact {
+                    ul {
+                        li {
+                            a {
+                                color: $color-white-0;
+
+                                span,
+                                i {
+                                    color: $color-white-0;
+                                    &:hover {
+                                        background-color: $color-dark-1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .carousel_social {
+                        span {
+                            i {
+                                color: $color-white-0;
+                                &:hover {
+                                    background-color: $color-dark-1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

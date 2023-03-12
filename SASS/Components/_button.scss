@@ -1,0 +1,68 @@
+.button--green {
+    outline: none;
+    @include styleButton(
+        $color-green-3,
+        transparent,
+        $ls-0 + 1,
+        none,
+        $fs-5,
+        $fw-2,
+        $pd-0 - 5,
+        $pd-1 + 3,
+        none
+    );
+    &:hover {
+        @include hoverButton($color-green-3,transparent, none);
+    }
+    &:focus {
+        @include focusButton;
+    }
+}
+
+// .button--green__square {
+//     @include styleButton(
+//         $color-green-1,
+//         $color-white-2,
+//         $ls-0 + 1,
+//         $color-green-2,
+//         $fs-5,
+//         $fw-2,
+//         $pd-0 - 1,
+//         ($pd-0) + 2,
+//         0
+//     );
+//     &:hover {
+//         @include hoverButton($color-white-0, $color-green-3, $color-green-3);
+//     }
+//     &:focus {
+//         @include focusButton;
+//     }
+// }
+// .button_close {
+//     @include styleButton(
+//         $color-Black-0,
+//         transition,
+//         $ls-0 + 1,
+//         $color-green-0,
+//         $fs-5,
+//         $fw-2,
+//         $pd-0 - 1,
+//         ($pd-0) + 2,
+//         70%
+//     );
+//     &:hover {
+//         @include hoverButton($color-green-3, $color-green-2, $color-green-0);
+//     }
+//     &:focus {
+//         @include focusButton;
+//     }
+// }
+.button--CV {
+    @include styleButton($color-white-0, transparent, $ls-1, $color-white-0, $fs-0 - 5, $fw-2, $pd-0 - 5 , $pd-2 , 60px);
+    &:hover {
+        @include hoverButton($color-white-0, $color-yellow-0, $color-white-0);
+    }
+    &:focus {
+        @include focusButton;
+    }
+}

@@ -1,0 +1,15 @@
+.darkMode {
+    footer {
+        background-color: #6b8375;
+        .footer_content {
+            p {
+                color: $color-white-0;
+            }
+        }
+    }
+    .backToTop {
+        i {
+            color: $color-yellow-0;
+        }
+    }
+}

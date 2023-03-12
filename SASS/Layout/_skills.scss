@@ -1,0 +1,26 @@
+.skills {
+    padding: 100px 0;
+    .skills_content {
+        width: 80%;
+        margin: auto;
+        h1 {
+            text-align: center;
+            @include styleText($color-Black-0, $fs-1, $fw-3, $ls-0);
+            margin-bottom: $mg-1 + 5;
+        }
+
+        .skills_items {
+            p{
+                text-align: right;
+                margin-top: $mg-0;
+
+            }
+            img {
+                margin-top: $mg-0;
+                display: inline-block;
+                max-width: 70px;
+                height: auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+// Color
+$color-Black-0: #000;
+$color-Black-1: #727272;
+$color-white-0: rgb(255, 255, 255);
+$color-white-1: rgba(255, 255, 255, 0.842);
+$color-green-0: #b2c8a2;
+$color-green-1: #7a9b57;
+$color-green-2: #bdd299;
+$color-green-3: #455e14;
+$color-yellow-0: #ffbd59;
+// DARK MODE
+$color-dark-0: #000000;
+$color-dark-1: #0000006b;
+$dark-green-0: #d8e9a8;
+$dark-green-1: #98b28f;
+$dark-green-2: #6b8375;
+
+//Font Size
+$fs-0: 35px;
+$fs-1: 60px;
+$fs-2: 50px;
+$fs-3: 30px;
+$fs-4: 25px;
+$fs-5: 20px;
+
+//margin
+$mg-0: 15px;
+$mg-1: 25px;
+$mg-3: 3px;
+//Padding
+$pd-0: 15px;
+$pd-1: 5px;
+$pd-2: 20px;
+$pd-3: 30px;
+
+//Letter spacing
+$ls-0: 1px;
+$ls-1: 2.5px;
+
+//line height
+$lh-0: 30px;
+//border radius
+$br-0: 34px;
+$br-1: 15px;
+//Font weight
+$fw-0: 400;
+$fw-1: 500;
+$fw-2: 600;
+$fw-3: 700;
+
+//break-point
+$breakpoints: (
+    "screen-1": 1425px,
+    "extra-large": 1200px,
+    "large": 992px,
+    "medium": 768px,
+    "small": 576px,
+);

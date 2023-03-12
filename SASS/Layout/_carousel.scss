@@ -1,0 +1,186 @@
+body {
+    font-family: "Baloo Bhaijaan 2", cursive;
+}
+.carousel {
+    background-color: $color-green-0;
+
+    .carousel_content {
+        padding-top: 120px;
+        width: 80%;
+        margin: auto;
+        .carousel_left {
+            .carousel_text {
+                p {
+                    display: inline-block;
+                    border: 2px solid $color-green-1;
+                    background-color: $color-white-0;
+                    padding: $pd-1 $pd-2;
+                    text-align: center;
+                    border-radius: 30px 30px 30px 0;
+                    @include styleText($color-green-1, $fs-3, $fw-1, $ls-1);
+                    margin-bottom: $mg-1;
+                    animation-delay: 0.5s;
+                }
+                h1 {
+                    @include styleText($color-white-0, $fs-2, $fw-3, $ls-1);
+                }
+                .typing-out {
+                    min-height: 30px;
+                    font-weight: 600;
+                    @include styleText($color-green-3, $fs-4, $fw-1, $ls-1);
+                }
+            }
+            .carousel_contact {
+                ul {
+                    padding: 0;
+
+                    li {
+                        list-style: none;
+                        margin: 10px 0;
+                        a {
+                            text-decoration: none;
+                            @include styleText($color-white-0, $fs-5, $fw-0, $ls-1);
+                            span {
+                                background-color: transparent;
+                                border-radius: 30px;
+                                padding: 3px 10px;
+                                text-align: center;
+                                transition: 0.3s;
+                                @include link-color($color-white-0, $color-yellow-0, none);
+                            }
+                            i {
+                                width: 35px;
+                                height: 35px;
+                                border-radius: 50%;
+                                background-color: transparent;
+                                text-align: center;
+                                line-height: 35px;
+                                color: $color-white-0;
+                                margin-right: $pd-1;
+                                transition: 0.3s;
+                                @include link-color($color-white-0, $color-yellow-0, none);
+                            }
+                        }
+                    }
+                }
+                .carousel_social {
+                    margin: 0;
+                    padding: 0;
+                    animation-delay: 0.5s;
+                    span {
+                        i {
+                            width: 35px;
+                            height: 35px;
+                            border-radius: 50%;
+                            line-height: 35px;
+                            @include styleText($color-white-0, $fs-5, $fw-0, $ls-1);
+                            margin: $mg-0;
+                            text-align: center;
+                            transition: 0.5s;
+                            @include link-color($color-white-0, $color-yellow-0, none);
+                        }
+                    }
+                }
+            }
+            .carousel_CV {
+                margin-top: $mg-0 - 5;
+                margin-left: $mg-0;
+                button {
+                    border: dashed;
+                }
+            }
+        }
+        .carousel_right {
+            img {
+                margin: $mg-1;
+                max-width: 70%;
+                //   height: auto;
+            }
+        }
+    }
+}
+
+// Responsive
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .carousel {
+        .carousel_content {
+            .carousel_left {
+                .typing-out {
+                    p {
+                        font-size: $fs-4;
+                    }
+                    h1 {
+                        font-size: $fs-0 + 5;
+                    }
+                    h2 {
+                        font-size: $fs-3;
+                    }
+                }
+                .carousel_contact {
+                    ul {
+                        li {
+                            a {
+                                font-size: $fs-5;
+                            }
+                        }
+                    }
+
+                    .carousel_social {
+                        span {
+                            i {
+                                font-size: $fs-5;
+                            }
+                        }
+                    }
+                }
+            }
+            .carousel_right {
+                img {
+                    max-width: 90%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 991px) {
+    .carousel {
+        .carousel_content {
+            .carousel_left {
+                margin-left: 100px;
+            }
+            .carousel_right {
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .carousel {
+        .carousel_content {
+            .carousel_left {
+                margin-left: 25px;
+                .carousel_text {
+                    p {
+                        font-size: 20px;
+                    }
+                    h1 {
+                        font-size: $fs-2 - 5;
+                    }
+                    .typing-out {
+                        font-size: $fs-3 - 5;
+                    }
+                }
+            }
+            .carousel_right {
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

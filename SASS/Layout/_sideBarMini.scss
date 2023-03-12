@@ -1,0 +1,81 @@
+.sideBarMini {
+    width: 400px;
+    position: fixed;
+    top: 20%;
+    right: 0;
+    background-color: $color-yellow-0;
+    z-index: 100;
+    transform: translateX(100%);
+    transition: 0.5s;
+    border-left: 2px solid $color-yellow-0;
+    border-radius: 0 0 0 15px;
+    .sideBarMini__button {
+        @include styleButton(
+            $color-Black-0,
+            $color-yellow-0,
+            $ls-0,
+            $color-yellow-0,
+            $fs-5,
+            $fw-1,
+            $pd-0 - 5,
+            $pd-0 - 5,
+            $br-1,
+        );
+        line-height: 10px;
+        border-radius: 8px 0 0 8px;
+        position: fixed;
+        transform: translateX(-100%);
+        &:focus {
+            outline: none;
+        }
+        transition: 0.5s;
+    }
+    .sideBarMini__content {
+        width: 150px;
+        padding: $pd-2;
+        text-align: center;
+        h2 {
+            font-size: $fs-5;
+        }
+        .swith {
+            width: 50px;
+            height: 25px;
+            margin: 0 5px + 5;
+            position: relative;
+            input {
+                display: none;
+                &:checked + .slider {
+                    &::before {
+                        transform: translateX(22px);
+                    }
+                }
+            }
+            .slider {
+                background-color: $color-Black-0;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                border-radius: 34px;
+                cursor: pointer;
+                &::before {
+                    content: "";
+                    width: 18px;
+                    height: 18px;
+                    background-color: $color-white-0;
+                    border-radius: 50%;
+                    display: inline-block;
+                    position: absolute;
+                    bottom: 4px;
+                    left: 4px;
+                    transition: 0.4s;
+                }
+            }
+        }
+    }
+
+    &.is-opened {
+        transform: translateX(60%);
+    }
+}

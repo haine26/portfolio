@@ -1,0 +1,20 @@
+.darkMode{
+    .button--green {
+        &:hover {
+            @include hoverButton($color-white-0, $color-green-1, $dark-green-2);
+        }
+        &:focus{
+            @include focusButton;
+        }
+    }
+    // .button--green__square{
+    //     background-color: $dark-green-1;
+    //     color: $color-dark-0;
+    //     &:hover {
+    //         @include hoverButton($color-white-0, $color-green-1, $color-green-3);
+    //     }
+    //     &:focus{
+    //         @include focusButton;
+    //     }
+    // }
+}

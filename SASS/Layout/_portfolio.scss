@@ -1,0 +1,70 @@
+.portfolio {
+    padding: 100px 0;
+    background-image: url(../../img/low-poly-grid-haikei.svg);
+    background-size: cover;
+    h1 {
+        text-align: center;
+        @include styleText($color-Black-0, $fs-1, $fw-3, $ls-0);
+        margin-bottom: $mg-1 + 5;
+    }
+    .portfolio_content {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        .portfolio_item {
+            margin-bottom: $mg-1;
+            .portfolio_details {
+                position: relative;
+                overflow: hidden;
+                &:hover {
+                    .wrap {
+                        opacity: 1;
+                        transform: translateX(0);
+                    }
+                }
+                img {
+                    display: block;
+                    width: 100%;
+                    transition: 0.5s;
+                    height: auto;
+                }
+            }
+        }
+    }
+    // .modal {
+    //     .modal-dialog {
+    //         .modal-header {
+    //             background-color: $color-green-2;
+    //             .modal-title {
+    //                 @include styleText($color-Black-0, $fs-0, $fw-2, $ls-0);
+    //             }
+    //         }
+    //         .modal-body {
+    //             // max-width: 100%;
+    //             text-align: center;
+    //             img {
+    //                 width: 400px;
+    //             }
+    //             p {
+    //                 width: 85%;
+    //                 margin: auto;
+    //                 // text-align: left;
+    //                 @include styleText($color-Black-0, $fs-5, $fw-0, $ls-0);
+    //                 padding: 20px 0;
+    //             }
+    //         }
+    //     }
+    // }
+}
+
+@include responsive("small") {
+    .portfolio {
+        .portfolio_content {
+            .row {
+                .portfolio_a {
+                    left: 107px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.darkMode {
+    .about {
+        background-image: url(../../img/wave-haikei-dark.svg);
+        background-size: cover;
+        color: $color-white-0;
+        .about_content {
+            h1 {
+                color: $color-white-0;
+            }
+            .about_items {
+                .about_status {
+                    p {
+                        color: $color-white-0;
+                    }
+                }
+            }
+        }
+    }
+}

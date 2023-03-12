@@ -1,0 +1,37 @@
+footer {
+
+    .footer_content {
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        position: relative;
+        p {
+            padding: 30px;
+            margin-bottom: 0;
+            @include styleText($color-Black-0, $fs-5, $fw-2, $ls-0);
+        }
+    }
+}
+
+.backToTop {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    visibility: hidden;
+    i {
+        color: $color-green-1;
+        width: 40px;
+        height: 40px;
+        font-size: 2rem;
+        text-align: center;
+        line-height: 36px;
+    }
+}
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+/* // reduce button opacity if user keeps scrolling */
+.cd-top--fade-out {
+    opacity: 0.5;
+}
