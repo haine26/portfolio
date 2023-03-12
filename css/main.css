@@ -353,7 +353,7 @@ body {
 }
 
 .about {
-  background-image: url(../../img/wave-haikei.svg);
+  background-image: url(img/wave-haikei.svg);
   background-size: cover;
   padding: 100px 0;
 }
@@ -443,7 +443,7 @@ body {
 
 .portfolio {
   padding: 100px 0;
-  background-image: url(../../img/low-poly-grid-haikei.svg);
+  background-image: url(img/low-poly-grid-haikei.svg);
   background-size: cover;
 }
 
@@ -483,12 +483,6 @@ body {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   height: auto;
-}
-
-@media screen and (max-width: 576px) {
-  .portfolio .portfolio_content .row .portfolio_a {
-    left: 107px;
-  }
 }
 
 .sideBarMini {
